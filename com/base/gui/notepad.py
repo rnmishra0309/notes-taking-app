@@ -75,7 +75,6 @@ class Notepad:
                 file.write(self.__text_area.get(1.0, END))
                 file.close()
                 self.__root.title(os.path.basename(self.__file) + " - Notepad File")
-
         else:
             file = open(self.__file, "w")
             file.write(self.__text_area.get(1.0, END))
